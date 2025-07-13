@@ -14,7 +14,7 @@ function Footer() {
     <Container fluid className="footer">
       <Row>
         <Col md="4" className="footer-copywright">
-          <h3>Designed and Customised by Ahed Memas </h3>
+          <h3>Designed and Built by Ahed Memas </h3>
         </Col>
         <Col md="4" className="footer-copywright">
           <h3>Copyright © {year}</h3>
@@ -60,11 +60,6 @@ function Footer() {
               >
                 <SiGmail />
               </a>
-            </li>
-            <li >
-              <p style={{ color: "white", paddingLeft: "10px", fontSize: "4px" }}>
-              Forked from Soumyajit4419. All rights reserved.
-              </p>
             </li>
           </ul>
         </Col>

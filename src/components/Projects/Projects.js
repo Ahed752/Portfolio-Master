@@ -35,7 +35,13 @@ function Projects() {
                 </ul>
               }
               ghLink="https://github.com/awaazo/awaazo"
+              details={{
+                techStack: ["React", "Redux", ".NET Core", "C#", "MSSQL", "Entity Framework"],
+                skills: ["REST API design", "Full-stack development", "Podcast transcription", "State management"],
+                demoVideoUrl: "https://your-demo-link.com/awaazo"
+              }}
             />
+
           </Col>
 
           <Col md={4} className="project-card">
@@ -47,14 +53,18 @@ function Projects() {
                 <ul>
                   <li>Our app aims to simulate taking input from an EEG device to convert brain signal into music, allowing users to choose their preferred instrument from a list of options.</li>
                   <li>Designed dynamic, user-friendly single-page applications using React.</li>
-                  <li>Created and managed an SQl database using Sequelize and Express.js.</li>
+                  <li>Created and managed an SQL database using Sequelize and Express.js.</li>
                   <li>Utilised PostMan and Swagger to test and document RESTful APIs.</li>
-                  
                 </ul>
               }
               ghLink="https://github.com/rogersi9/NeuroNote"
-              
+              details={{
+                techStack: ["React", "Node.js", "Express", "Sequelize", "PostgreSQL", "Swagger", "Postman"],
+                skills: ["Brain signal simulation", "Music generation logic", "API documentation", "Backend with Sequelize"],
+                demoVideoUrl: "https://your-demo-link.com/neuroneote"
+              }}
             />
+
           </Col>
 
           <Col md={4} className="project-card">
@@ -71,6 +81,11 @@ function Projects() {
                 </ul>
               }
               ghLink="https://github.com/Ahed752/WifiLocation-SOEN-321"
+              details = {{
+                techStack: ["Java", "Android Studio", "Machine Learning"],
+                skills: ["RSSI signal analysis", "Device movement prediction", "ML in mobile"],
+                demoVideoUrl: "https://your-demo-video-url.com/movement.mp4"
+              }}
               
             />
           </Col>
@@ -87,8 +102,13 @@ function Projects() {
                 </ul>
               }
               ghLink="https://github.com/Marc-Eid/SkillSwipe"
-            />
-          </Col>
+            details={{
+              techStack: ["Java", "Android Studio", "Machine Learning"],
+              skills: ["RSSI signal analysis", "Device movement prediction", "ML in mobile"],
+              demoVideoUrl: "https://your-demo-video-url.com/movement.mp4"
+            }}
+          />
+        </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
@@ -103,6 +123,11 @@ function Projects() {
                   <li>Utilised JavaScript and React to create dynamic, user-friendly single-page applications.</li>
                 </ul>
               }
+              details = {{
+                techStack: ["Java", "Android Studio", "Machine Learning"],
+                skills: ["RSSI signal analysis", "Device movement prediction", "ML in mobile"],
+                demoVideoUrl: "https://your-demo-video-url.com/movement.mp4"
+              }}
               ghLink="https://github.com/raccoonrick/SOEN341"
             />
           </Col>
@@ -119,8 +144,13 @@ function Projects() {
                   <li>Used Open-CV to detect the face in an image and then pass the face to the classifer to predict the emotion of a person..</li>
                 </ul>
               }
-              ghLink="https://github.com/Ahed752/Face_And_Emotion_Detection"
-              // demoLink="https://blogs.soumya-jit.tech/"      <--------Please include a demo link here 
+              ghLink="https://github.com/Ahed752/Face_And_Emotion_Detection" 
+            details={{
+              techStack: ["Java", "Android Studio", "Machine Learning"],
+              skills: ["RSSI signal analysis", "Device movement prediction", "ML in mobile"],
+              demoVideoUrl: "https://your-demo-video-url.com/movement.mp4"
+            }}
+
             />
           </Col>
         </Row>

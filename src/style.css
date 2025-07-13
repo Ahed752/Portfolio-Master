@@ -484,6 +484,57 @@ button:focus {
   height: auto !important;
 }
 
+.custom-modal-content {
+  background-color: rgba(28, 28, 28, 0.95) !important;
+  border-radius: 15px;
+  border: 1px solid rgba(199, 112, 240, 0.3);
+  box-shadow: 0 4px 5px 3px rgba(119, 53, 136, 0.45);
+  color: white;
+  transition: all 0.5s ease;
+}
+
+.custom-modal-header,
+.custom-modal-footer {
+  background-color: transparent !important;
+  border: none !important;
+}
+
+.custom-modal-header .modal-title {
+  color: #c770f0 !important;
+  font-weight: bold;
+}
+
+.custom-modal-body {
+  background-color: transparent;
+  padding: 20px;
+  color: white;
+  opacity: 0.9;
+}
+
+.custom-modal-body h5 {
+  color: #c770f0;
+  margin-top: 20px;
+  font-weight: 600;
+}
+
+.custom-modal-body ul {
+  padding-left: 20px;
+  margin-top: 10px;
+}
+
+.custom-modal-footer button {
+  background-color: transparent !important;
+  color: #c770f0 !important;
+  border: 1px solid #c770f0 !important;
+  transition: 0.3s;
+}
+
+.custom-modal-footer button:hover {
+  background-color: #c770f0 !important;
+  color: white !important;
+}
+
+
 .blog-card-view {
   background-color: transparent !important;
   box-shadow: 0 3px 3px 2px rgba(145, 77, 161, 0.459) !important;

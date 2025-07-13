@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import myImg from "../../Assets/avatar.svg";
+import myImg from "../../Assets/AhedAvatar.png";
 import Tilt from "react-parallax-tilt";
 import {
   AiFillGithub,
@@ -89,7 +89,7 @@ function Home2() {
                   <AiOutlineTwitter />
                 </a>
               </li>
-              <li className="social-icons">
+              {/* <li className="social-icons">
                 <a
                   href="https://www.linkedin.com/in/ahed-memas/"
                   target="_blank"
@@ -98,7 +98,7 @@ function Home2() {
                 >
                   <FaLinkedinIn />
                 </a>
-              </li>
+              </li> */}
               <li className="social-icons">
               <a
                 href="mailto:ahed.mimas@gmai.com"
