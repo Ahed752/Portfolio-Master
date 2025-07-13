@@ -21,40 +21,23 @@ function Home2() {
               LET ME <span className="purple"> INTRODUCE </span> MYSELF
             </h1>
             <p className="home-about-body">
-              I fell in love with programming and I have at least learnt
-              something, I think… 🤷‍♂️
+              I’m a <b className="purple">Software Engineer</b> based in Montreal with hands-on experience building full-stack web apps, AI-based systems, and real-time detection tools.
               <br />
               <br />
-              I have completed My Bachelor's in Software Engineering at Concordia University.
-              <br />I am fluent in classics like
-              <i>
-                <b className="purple"> Java, Javascript and C#. </b>
-              </i>
+              I hold a Bachelor's degree in Software Engineering from Concordia University, and I’ve built real-world projects using 
+              <i><b className="purple"> React, Next.js, C#, Node.js, and Python</b></i>.
               <br />
               <br />
-              My field of Interest's are building new &nbsp;
-              <i>
-                <b className="purple">Web Technologies and Products </b> and
-                also in areas related to{" "}
-                <b className="purple">
-                  Blockchain.
-                </b>
-              </i>
+              My main focus is developing user-friendly, scalable solutions — from podcast platforms and brain-signal music apps, to WiFi-based movement tracking and e-commerce systems.
               <br />
               <br />
-              Whenever possible, I also apply my passion for developing products
-              with <b className="purple">Node.js</b> and
-              <i>
-                <b className="purple">
-                  {" "}
-                  Modern Javascript Library and Frameworks
-                </b>
-              </i>
-              &nbsp; like
-              <i>
-                <b className="purple"> React.js and Next.js</b>
-              </i>
+              I'm confident working across the stack, building APIs, integrating machine learning, and using tools like 
+              <i><b className="purple"> PostgreSQL, Firebase, and Stripe</b></i>.
+              <br />
+              <br />
+              I’m currently open to new opportunities where I can keep learning, contribute to real products, and solve meaningful problems with code.
             </p>
+
           </Col>
           <Col md={4} className="myAvtar">
             <Tilt>

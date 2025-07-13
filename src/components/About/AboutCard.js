@@ -10,23 +10,25 @@ function AboutCard() {
           <p>
             Hi, I'm <span className="purple">Ahed Memas</span> from <span className="purple">Montreal, Canada</span>.
             <br /><br />
-            I'm a Software Engineer with hands-on experience in full-stack web development, QA automation, and AI integration. I specialize in building scalable, user-focused applications using modern tools like React, Node.js, and .NET.
+            I’m a curious and driven software engineer who enjoys solving real-world problems through code. From designing full-stack platforms to experimenting with AI tools and automation — I build with purpose and clarity.
             <br /><br />
-            🎓 I earned my Bachelor's in Software Engineering from <strong>Concordia University</strong>.
-            <br /><br />
-            🚀 <strong>What I do best:</strong>
-            <ul>
-              <li>Design and implement end-to-end web apps</li>
-              <li>Build RESTful APIs and connect front-end to backend</li>
-              <li>Collaborate in agile teams and ship fast</li>
-            </ul>
+            I graduated with a Bachelor's in Software Engineering from <strong>Concordia University</strong>, and have worked on several impactful projects involving:
+          </p>
 
-            🎯 <strong>Current Focus:</strong> I'm looking for full-time or freelance opportunities in web development, AI-assisted tools, or startup projects where I can build useful real-world solutions.
+          <ul>
+            <li>Smart podcasting platforms with AI transcription</li>
+            <li>Music generation from simulated brain signals</li>
+            <li>Real-time facial emotion and mask detection</li>
+            <li>Custom job-matching and e-commerce tools</li>
+          </ul>
+
+          <p>
+            My goal is to always deliver code that feels thoughtful, useful, and maintainable.
           </p>
 
           <hr style={{ borderTop: "1px dashed #c770f0" }} />
 
-          <p>Outside of tech, I enjoy:</p>
+          <p>Outside the codebase, I recharge by:</p>
           <ul>
             <li className="about-activity"><ImPointRight /> Playing Video Games</li>
             <li className="about-activity"><ImPointRight /> Watching Movies & Series</li>
