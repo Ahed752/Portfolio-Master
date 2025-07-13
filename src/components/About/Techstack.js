@@ -1,6 +1,5 @@
 import React from "react";
 import { Col, Row } from "react-bootstrap";
-import { CgCPlusPlus } from "react-icons/cg";
 import {
   DiJavascript1,
   DiReact,
@@ -19,44 +18,55 @@ import {
 
 function Techstack() {
   return (
-    <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
-      <Col xs={4} md={2} className="tech-icons" title="C++">
-        <CgCPlusPlus />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons" title="JavaScript">
-        <DiJavascript1 />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons" title="C#">
-        <SiCsharp />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons" title="Node.js">
-        <DiNodejs />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons" title="Python">
-        <DiPython />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons" title="Java">
-        <DiJava />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons" title="React">
-        <DiReact />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons" title="MongoDB">
-        <DiMongodb />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons" title="Next.js">
-        <SiNextdotjs />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons" title="Git">
-        <DiGit />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons" title="Firebase">
-        <SiFirebase />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons" title="PostgreSQL">
-        <SiPostgresql />
-      </Col>
-    </Row>
+    <>
+      <h5 style={{ color: "#c770f0", textAlign: "center", marginBottom: "20px" }}>
+        🧠 Core Programming Languages
+      </h5>
+      <Row style={{ justifyContent: "center", paddingBottom: "20px" }}>
+        <Col xs={4} md={2} className="tech-icons" title="JavaScript">
+          <DiJavascript1 />
+        </Col>
+        <Col xs={4} md={2} className="tech-icons" title="Python">
+          <DiPython />
+        </Col>
+        <Col xs={4} md={2} className="tech-icons" title="Java">
+          <DiJava />
+        </Col>
+        <Col xs={4} md={2} className="tech-icons" title="C#">
+          <SiCsharp />
+        </Col>
+      </Row>
+
+      <h5 style={{ color: "#c770f0", textAlign: "center", marginBottom: "20px" }}>
+        🧩 Frameworks & Libraries
+      </h5>
+      <Row style={{ justifyContent: "center", paddingBottom: "20px" }}>
+        <Col xs={4} md={2} className="tech-icons" title="React">
+          <DiReact />
+        </Col>
+        <Col xs={4} md={2} className="tech-icons" title="Next.js">
+          <SiNextdotjs />
+        </Col>
+        <Col xs={4} md={2} className="tech-icons" title="Node.js">
+          <DiNodejs />
+        </Col>
+        <Col xs={4} md={2} className="tech-icons" title="Firebase">
+          <SiFirebase />
+        </Col>
+      </Row>
+
+      <h5 style={{ color: "#c770f0", textAlign: "center", marginBottom: "20px" }}>
+        🗃️ Databases
+      </h5>
+      <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
+        <Col xs={4} md={2} className="tech-icons" title="MongoDB">
+          <DiMongodb />
+        </Col>
+        <Col xs={4} md={2} className="tech-icons" title="PostgreSQL">
+          <SiPostgresql />
+        </Col>
+      </Row>
+    </>
   );
 }
 

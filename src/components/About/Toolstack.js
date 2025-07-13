@@ -7,34 +7,45 @@ import {
   SiMysql,
   SiMacos,
   SiLinux,
-  SiMariadb
+  SiMariadb,
 } from "react-icons/si";
 
 function Toolstack() {
   return (
-    <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiMacos />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiLinux />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiVisualstudiocode />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiPostman />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiSlack />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiMysql />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiMariadb />
-      </Col>
-    </Row>
+    <>
+      <h5 style={{ color: "#c770f0", textAlign: "center", marginBottom: "20px" }}>
+        🛠 Development Tools & Platforms
+      </h5>
+      <Row style={{ justifyContent: "center", paddingBottom: "20px" }}>
+        <Col xs={4} md={2} className="tech-icons" title="VS Code">
+          <SiVisualstudiocode />
+        </Col>
+        <Col xs={4} md={2} className="tech-icons" title="Postman">
+          <SiPostman />
+        </Col>
+        <Col xs={4} md={2} className="tech-icons" title="Slack">
+          <SiSlack />
+        </Col>
+      </Row>
+
+      <h5 style={{ color: "#c770f0", textAlign: "center", marginBottom: "20px" }}>
+        🧱 Databases & Systems
+      </h5>
+      <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
+        <Col xs={4} md={2} className="tech-icons" title="MySQL">
+          <SiMysql />
+        </Col>
+        <Col xs={4} md={2} className="tech-icons" title="MariaDB">
+          <SiMariadb />
+        </Col>
+        <Col xs={4} md={2} className="tech-icons" title="macOS">
+          <SiMacos />
+        </Col>
+        <Col xs={4} md={2} className="tech-icons" title="Linux">
+          <SiLinux />
+        </Col>
+      </Row>
+    </>
   );
 }
 
