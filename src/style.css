@@ -534,6 +534,25 @@ button:focus {
   color: white !important;
 }
 
+/* Ensure the carousel item has a fixed height */
+.carousel-item-custom {
+  height: 400px; /* Fixed height for each slide */
+  overflow-y: auto; /* Makes content scrollable if it exceeds the height */
+}
+
+/* Optional: Ensure that the content does not overflow */
+.carousel-item-custom h5,
+.carousel-item-custom p,
+.carousel-item-custom ul {
+  margin-bottom: 15px;
+}
+
+.carousel-item-custom pre {
+  max-height: 250px; /* Limit the height of the code block */
+  overflow-y: auto;
+}
+
+
 
 .blog-card-view {
   background-color: transparent !important;

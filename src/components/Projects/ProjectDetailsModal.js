@@ -1,5 +1,5 @@
 import React from "react";
-import { Modal, Button, Row, Col } from "react-bootstrap";
+import { Modal, Button, Carousel, Row, Col } from "react-bootstrap";
 
 function ProjectDetailsModal({ show, onHide, details }) {
   if (!details) return null;
@@ -19,89 +19,84 @@ function ProjectDetailsModal({ show, onHide, details }) {
       </Modal.Header>
 
       <Modal.Body className="custom-modal-body">
-        {details.projectSummary && (
-          <>
+        <Carousel>
+          {/* Slide 1: Overview */}
+          <Carousel.Item className="carousel-item-custom">
             <h5 style={{ color: "#c770f0" }}>🧾 Overview:</h5>
             <p style={{ color: "white" }}>{details.projectSummary}</p>
-          </>
-        )}
 
-        <Row>
-          {/* Left Column */}
-          <Col md={6}>
-            {details.techStack && (
-              <>
+            <Row>
+              <Col md={6}>
                 <h5 style={{ color: "#c770f0" }}>🛠 Tech Stack:</h5>
                 <ul style={{ color: "white" }}>
                   {details.techStack.map((tech, idx) => (
                     <li key={idx}>{tech}</li>
                   ))}
                 </ul>
-              </>
-            )}
+              </Col>
 
-            {details.features && (
-              <>
+              <Col md={6}>
                 <h5 style={{ color: "#c770f0" }}>✨ Features:</h5>
                 <ul style={{ color: "white" }}>
                   {details.features.map((feature, idx) => (
                     <li key={idx}>{feature}</li>
                   ))}
                 </ul>
-              </>
-            )}
-          </Col>
+              </Col>
+            </Row>
+          </Carousel.Item>
 
-          {/* Right Column */}
-          <Col md={6}>
-            {details.skills && (
-              <>
-                <h5 style={{ color: "#c770f0" }}>🎓 Skills Learned:</h5>
-                <ul style={{ color: "white" }}>
-                  {details.skills.map((skill, idx) => (
-                    <li key={idx}>{skill}</li>
-                  ))}
-                </ul>
-              </>
-            )}
+          {/* Slide 2: Scenario */}
+          <Carousel.Item className="carousel-item-custom">
+            <h5 style={{ color: "#c770f0" }}>💡 Scenario:</h5>
+            <p style={{ color: "white" }}>{details.scenario}</p>
+          </Carousel.Item>
 
-            {details.challengesSolved && (
-              <>
-                <h5 style={{ color: "#c770f0" }}>🚧 Challenges Solved:</h5>
-                <ul style={{ color: "white" }}>
-                  {details.challengesSolved.map((challenge, idx) => (
-                    <li key={idx}>{challenge}</li>
-                  ))}
-                </ul>
-              </>
-            )}
-          </Col>
-        </Row>
+          {/* Slide 3: Solution/Logic */}
+          <Carousel.Item className="carousel-item-custom">
+            <h5 style={{ color: "#c770f0" }}>🔧 Solution & Logic:</h5>
+            <p style={{ color: "white" }}>{details.solution}</p>
+          </Carousel.Item>
 
-        {/* Video at the bottom
-        <div className="mt-4">
-          <h5 style={{ color: "#c770f0" }}>📽️ Demo Video:</h5>
-          {details.demoVideoUrl ? (
-            <video width="100%" controls style={{ borderRadius: "12px" }}>
-              <source src={details.demoVideoUrl} type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
-          ) : (
-            <div
-              style={{
-                background: "#1f1f1f",
-                height: "280px",
-                borderRadius: "12px",
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "center",
-                color: "#888",
-              }}
-            >
-              <p>No demo video available.</p>
-            </div>
-          )}
-        </div> */}
+          {/* Slide 4: Code Snippet */}
+          <Carousel.Item className="carousel-item-custom">
+            <h5 style={{ color: "#c770f0" }}>💻 Code Snippet:</h5>
+            <pre style={{ color: "white", background: "#1f1f1f", padding: "10px", borderRadius: "10px" }}>
+              {details.codeSnippet || `// Add your code snippet here`}
+            </pre>
+          </Carousel.Item>
+
+          {/* Slide 5: Skills Learned */}
+          <Carousel.Item className="carousel-item-custom">
+            <h5 style={{ color: "#c770f0" }}>🎓 Skills Learned:</h5>
+            <ul style={{ color: "white" }}>
+              {details.skills.map((skill, idx) => (
+                <li key={idx}>{skill}</li>
+              ))}
+            </ul>
+          </Carousel.Item>
+
+          {/* Slide 6: Challenges Solved */}
+          <Carousel.Item className="carousel-item-custom">
+            <h5 style={{ color: "#c770f0" }}>🚧 Challenges Solved:</h5>
+            <ul style={{ color: "white" }}>
+              {details.challengesSolved.map((challenge, idx) => (
+                <li key={idx}>{challenge}</li>
+              ))}
+            </ul>
+          </Carousel.Item>
+
+          <Carousel.Item className="carousel-item-custom">
+  <h5 style={{ color: "#c770f0" }}>🛠 System Architecture:</h5>
+  <p style={{ color: "white" }}>{details.systemArchitecture}</p>
+</Carousel.Item>
+
+<Carousel.Item className="carousel-item-custom">
+  <h5 style={{ color: "#c770f0" }}>🚀 Performance Optimization:</h5>
+  <p style={{ color: "white" }}>{details.performanceOptimization}</p>
+</Carousel.Item>
+
+        </Carousel>
       </Modal.Body>
 
       <Modal.Footer className="custom-modal-footer">
