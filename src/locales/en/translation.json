@@ -1,0 +1,18 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "projects": "Projects",
+    "resume": "Resume"
+  },
+  "resume": {
+    "download": "Download CV"
+  },
+  "home": {
+    "greeting": "Hi There!",
+    "im": "I'M"
+  },
+  "home2": {
+    "intro": "LET ME <span class=\"purple\"> INTRODUCE </span> MYSELF"
+  }
+}

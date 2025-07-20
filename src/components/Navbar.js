@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
+import NavDropdown from 'react-bootstrap/NavDropdown';
+import { useTranslation } from "react-i18next";
 import Container from "react-bootstrap/Container";
 import { Link } from "react-router-dom";
 import {
@@ -14,7 +16,7 @@ import { CgFileDocument } from "react-icons/cg";
 function NavBar() {
   const [expand, updateExpanded] = useState(false);
   const [navColour, updateNavbar] = useState(false);
-
+  const { t, i18n } = useTranslation();
   function scrollHandler() {
     if (window.scrollY >= 20) {
       updateNavbar(true);
@@ -47,7 +49,7 @@ function NavBar() {
           <Nav className="ms-auto" defaultActiveKey="#home">
             <Nav.Item>
               <Nav.Link as={Link} to="/" onClick={() => updateExpanded(false)}>
-                <AiOutlineHome style={{ marginBottom: "2px" }} /> Home
+                <AiOutlineHome style={{ marginBottom: "2px" }} /> {t("nav.home")}
               </Nav.Link>
             </Nav.Item>
 
@@ -57,7 +59,7 @@ function NavBar() {
                 to="/about"
                 onClick={() => updateExpanded(false)}
               >
-                <AiOutlineUser style={{ marginBottom: "2px" }} /> About
+                <AiOutlineUser style={{ marginBottom: "2px" }} /> {t("nav.about")}
               </Nav.Link>
             </Nav.Item>
 
@@ -67,10 +69,8 @@ function NavBar() {
                 to="/project"
                 onClick={() => updateExpanded(false)}
               >
-                <AiOutlineFundProjectionScreen
-                  style={{ marginBottom: "2px" }}
-                />{" "}
-                Projects
+                <AiOutlineFundProjectionScreen style={{ marginBottom: "2px" }} />{" "}
+                {t("nav.projects")}
               </Nav.Link>
             </Nav.Item>
 
@@ -80,9 +80,16 @@ function NavBar() {
                 to="/resume"
                 onClick={() => updateExpanded(false)}
               >
-                <CgFileDocument style={{ marginBottom: "2px" }} /> Resume
+                <CgFileDocument style={{ marginBottom: "2px" }} /> {t("nav.resume")}
               </Nav.Link>
             </Nav.Item>
+
+
+            <NavDropdown title={i18n.language.toUpperCase()} id="basic-nav-dropdown">
+              <NavDropdown.Item onClick={() => i18n.changeLanguage("en")}>EN</NavDropdown.Item>
+              <NavDropdown.Item onClick={() => i18n.changeLanguage("fr")}>FR</NavDropdown.Item>
+              <NavDropdown.Item onClick={() => i18n.changeLanguage("ar")}>AR</NavDropdown.Item>
+            </NavDropdown>
 
           </Nav>
         </Navbar.Collapse>

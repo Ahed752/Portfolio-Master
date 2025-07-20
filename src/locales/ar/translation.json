@@ -1,0 +1,18 @@
+{
+  "nav": {
+    "home": "الرئيسية",
+    "about": "عنّي",
+    "projects": "المشاريع",
+    "resume": "السيرة الذاتية"
+  },
+  "resume": {
+    "download": "تحميل السيرة الذاتية"
+  },
+  "home": {
+    "greeting": "مرحباً!",
+    "im": "أنا"
+  },
+  "home2": {
+    "intro": "دعني <span class=\"purple\"> أُعرّف </span> بنفسي"
+  }
+}

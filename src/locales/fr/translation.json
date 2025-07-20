@@ -1,0 +1,18 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "about": "À propos",
+    "projects": "Projets",
+    "resume": "CV"
+  },
+  "resume": {
+    "download": "Télécharger le CV"
+  },
+  "home": {
+    "greeting": "Bonjour!",
+    "im": "Je suis"
+  },
+  "home2": {
+    "intro": "LAISSEZ-MOI <span class=\"purple\"> ME PRÉSENTER </span>"
+  }
+}
