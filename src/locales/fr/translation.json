@@ -10,9 +10,55 @@
   },
   "home": {
     "greeting": "Bonjour!",
-    "im": "Je suis"
+    "im": "Je suis Ahed Memas"
   },
   "home2": {
-    "intro": "LAISSEZ-MOI <span class=\"purple\"> ME PRÉSENTER </span>"
-  }
+    "intro": "LAISSEZ-MOI <span class=\"purple\"> ME PRÉSENTER </span>",
+    "content": "Je suis <b class=\"purple\">ingénieur logiciel</b> basé à Montréal avec une expérience pratique dans la création d'applications web full-stack, de systèmes IA et d'outils de détection en temps réel.<br /><br />Je suis titulaire d'un baccalauréat en génie logiciel de l'Université Concordia et j'ai réalisé des projets concrets utilisant <i><b class=\"purple\"> React, Next.js, C#, Node.js et Python</b></i>.<br /><br />Mon objectif principal est de développer des solutions conviviales et évolutives – des plateformes de podcasts et applications musicales par signaux cérébraux au suivi de mouvement par WiFi et aux systèmes de commerce électronique.<br /><br />Je suis à l'aise sur toute la pile, construisant des API, intégrant l'apprentissage automatique et utilisant des outils comme <i><b class=\"purple\"> PostgreSQL, Firebase et Stripe</b></i>.<br /><br />Je suis actuellement ouvert à de nouvelles opportunités où je peux continuer à apprendre, contribuer à de vrais produits et résoudre des problèmes concrets par le code.",
+    "find": "RETROUVEZ-MOI SUR",
+    "connect": "N'hésitez pas à <span class=\"purple\">me contacter</span>"
+  },
+  "about": {
+    "know": "Qui <strong class=\"purple\">SUIS-JE</strong>",
+    "skillsetHeading": "Compétences <strong class=\"purple\">Professionnelles</strong>",
+    "toolsHeading": "Les <strong class=\"purple\">outils</strong> que j'utilise"
+  },
+  "aboutCard": {
+    "intro1": "Salut, je suis <span class=\"purple\">Ahed Memas</span> de <span class=\"purple\">Montréal, Canada</span>.",
+    "intro2": "Je suis un ingénieur logiciel curieux et motivé qui aime résoudre des problèmes réels grâce au code. De la conception de plateformes full-stack à l'expérimentation d'outils IA et d'automatisation, je construis avec un objectif clair.",
+    "intro3": "J'ai obtenu un baccalauréat en génie logiciel de <strong>l'Université Concordia</strong> et j'ai travaillé sur plusieurs projets marquants comprenant :",
+    "list1": "Des plateformes de podcast intelligentes avec transcription IA",
+    "list2": "Génération de musique à partir de signaux cérébraux simulés",
+    "list3": "Détection d'émotions faciales et de port du masque en temps réel",
+    "list4": "Outils personnalisés d'appariement d'emploi et de commerce électronique",
+    "goal": "Mon objectif est toujours de livrer un code réfléchi, utile et maintenable.",
+    "outside": "En dehors du code, je me ressource en :",
+    "activity1": "Jouant aux jeux vidéo",
+    "activity2": "Regardant des films et des séries",
+    "activity3": "Faisant du sport",
+    "activity4": "Voyageant"
+  },
+  "tech": {
+    "core": " Langages de programmation principaux",
+    "frameworks": "\ud83e\udd16 Frameworks & bibliothèques",
+    "databases": "\ud83d\uddc3\ufe0f Bases de données"
+  },
+  "tools": {
+    "dev": "\ud83d\udee0 Outils et plateformes de développement",
+    "db": "\ud83e\uddf1 Bases de données & systèmes"
+  },
+  "projectsSection": {
+    "heading": "Mes <strong class=\"purple\">réalisations</strong> récentes",
+    "intro": "Voici quelques projets sur lesquels j'ai travaillé récemment."
+  },
+  "footer": {
+    "designed": "Conçu et développé par Ahed Memas"
+  },
+  "typewriter": [
+    "Ingénieur logiciel",
+    "Développeur web full stack",
+    "Assurance qualité",
+    "Passionné d'IA",
+    "Concepteur de bases de données"
+  ]
 }

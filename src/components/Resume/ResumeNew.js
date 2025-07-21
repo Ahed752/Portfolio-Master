@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Container, Row } from "react-bootstrap";
 import Button from "react-bootstrap/Button";
 import Particle from "../Particle";
+import { useTranslation } from "react-i18next";
 import pdf from "../../Assets/../Assets/AhedMemas.pdf";
 import { AiOutlineDownload } from "react-icons/ai";
 import { Document, Page, pdfjs } from "react-pdf";
@@ -10,6 +11,7 @@ pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/$
 
 function ResumeNew() {
   const [width, setWidth] = useState(1200);
+  const { t } = useTranslation();
 
   useEffect(() => {
     setWidth(window.innerWidth);
@@ -27,7 +29,7 @@ function ResumeNew() {
             style={{ maxWidth: "250px" }}
           >
             <AiOutlineDownload />
-            &nbsp;Download CV
+            &nbsp;{t("resume.download")}
           </Button>
         </Row>
 
@@ -51,7 +53,7 @@ function ResumeNew() {
             style={{ maxWidth: "250px" }}
           >
             <AiOutlineDownload />
-            &nbsp;Download CV
+              &nbsp;{t("resume.download")}
           </Button>
         </Row>
       </Container>

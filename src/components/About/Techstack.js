@@ -1,5 +1,6 @@
 import React from "react";
 import { Col, Row } from "react-bootstrap";
+import { useTranslation } from "react-i18next";
 import {
   DiJavascript1,
   DiReact,
@@ -17,10 +18,11 @@ import {
 } from "react-icons/si";
 
 function Techstack() {
+  const { t } = useTranslation();
   return (
     <>
       <h5 style={{ color: "#c770f0", textAlign: "center", marginBottom: "20px" }}>
-        🧠 Core Programming Languages
+        {t("tech.core")}
       </h5>
       <Row style={{ justifyContent: "center", paddingBottom: "20px" }}>
         <Col xs={4} md={2} className="tech-icons" title="JavaScript">
@@ -38,7 +40,7 @@ function Techstack() {
       </Row>
 
       <h5 style={{ color: "#c770f0", textAlign: "center", marginBottom: "20px" }}>
-        🧩 Frameworks & Libraries
+        {t("tech.frameworks")}
       </h5>
       <Row style={{ justifyContent: "center", paddingBottom: "20px" }}>
         <Col xs={4} md={2} className="tech-icons" title="React">
@@ -56,7 +58,7 @@ function Techstack() {
       </Row>
 
       <h5 style={{ color: "#c770f0", textAlign: "center", marginBottom: "20px" }}>
-        🗃️ Databases
+        {t("tech.databases")}
       </h5>
       <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
         <Col xs={4} md={2} className="tech-icons" title="MongoDB">

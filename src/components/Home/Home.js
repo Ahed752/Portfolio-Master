@@ -24,7 +24,6 @@ function Home() {
 
               <h1 className="heading-name">
                 {t("home.im")}
-                <strong className="main-name"> Ahed Memas</strong>
               </h1>
 
               <div style={{ padding: 50, textAlign: "left" }}>

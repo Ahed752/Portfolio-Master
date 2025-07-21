@@ -10,9 +10,55 @@
   },
   "home": {
     "greeting": "Hi There!",
-    "im": "I'M"
+    "im": "I'M Ahed Memas"
   },
   "home2": {
-    "intro": "LET ME <span class=\"purple\"> INTRODUCE </span> MYSELF"
-  }
+    "intro": "LET ME <span class=\"purple\"> INTRODUCE </span> MYSELF",
+    "content": "I’m a <b class=\"purple\">Software Engineer</b> based in Montreal with hands-on experience building full-stack web apps, AI-based systems, and real-time detection tools.<br /><br />I hold a Bachelor's degree in Software Engineering from Concordia University, and I’ve built real-world projects using <i><b class=\"purple\"> React, Next.js, C#, Node.js, and Python</b></i>.<br /><br />My main focus is developing user-friendly, scalable solutions — from podcast platforms and brain-signal music apps, to WiFi-based movement tracking and e-commerce systems.<br /><br />I'm confident working across the stack, building APIs, integrating machine learning, and using tools like <i><b class=\"purple\"> PostgreSQL, Firebase, and Stripe</b></i>.<br /><br />I’m currently open to new opportunities where I can keep learning, contribute to real products, and solve meaningful problems with code.",
+    "find": "FIND ME ON",
+    "connect": "Feel free to <span class=\"purple\">connect </span>with me"
+  },
+  "about": {
+    "know": "Know Who <strong class=\"purple\">I'M</strong>",
+    "skillsetHeading": "Professional <strong class=\"purple\">Skillset </strong>",
+    "toolsHeading": "<strong class=\"purple\">Tools</strong> I use"
+  },
+  "aboutCard": {
+    "intro1": "Hi, I'm <span class=\"purple\">Ahed Memas</span> from <span class=\"purple\">Montreal, Canada</span>.",
+    "intro2": "I’m a curious and driven software engineer who enjoys solving real-world problems through code. From designing full-stack platforms to experimenting with AI tools and automation — I build with purpose and clarity.",
+    "intro3": "I graduated with a Bachelor's in Software Engineering from <strong>Concordia University</strong>, and have worked on several impactful projects involving:",
+    "list1": "Smart podcasting platforms with AI transcription",
+    "list2": "Music generation from simulated brain signals",
+    "list3": "Real-time facial emotion and mask detection",
+    "list4": "Custom job-matching and e-commerce tools",
+    "goal": "My goal is to always deliver code that feels thoughtful, useful, and maintainable.",
+    "outside": "Outside the codebase, I recharge by:",
+    "activity1": "Playing Video Games",
+    "activity2": "Watching Movies & Series",
+    "activity3": "Working Out",
+    "activity4": "Travelling"
+  },
+  "tech": {
+    "core": "Core Programming Languages",
+    "frameworks": "\ud83e\udd16 Frameworks & Libraries",
+    "databases": "\ud83d\uddc3\ufe0f Databases"
+  },
+  "tools": {
+    "dev": "\ud83d\udee0 Development Tools & Platforms",
+    "db": "\ud83e\uddf1 Databases & Systems"
+  },
+  "projectsSection": {
+    "heading": "My Recent <strong class=\"purple\">Works </strong>",
+    "intro": "Here are a few projects I've worked on recently."
+  },
+  "footer": {
+    "designed": "Designed and Built by Ahed Memas"
+  },
+  "typewriter": [
+    "Software Engineer",
+    "Full Stack Web Developer",
+    "Quality Assurance",
+    "AI Enthusiast",
+    "Database Designer"
+  ]
 }

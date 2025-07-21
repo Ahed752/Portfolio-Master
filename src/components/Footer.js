@@ -6,15 +6,17 @@ import {
 } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
 import { SiGmail } from "react-icons/si";
+import { useTranslation } from "react-i18next";
 
 function Footer() {
+  const { t } = useTranslation();
   let date = new Date();
   let year = date.getFullYear();
   return (
     <Container fluid className="footer">
       <Row>
         <Col md="4" className="footer-copywright">
-          <h3>Designed and Built by Ahed Memas </h3>
+          <h3>{t("footer.designed")}</h3>
         </Col>
         <Col md="4" className="footer-copywright">
           <h3>Copyright © {year}</h3>

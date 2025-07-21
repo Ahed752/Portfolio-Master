@@ -1,5 +1,6 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
+import { useTranslation } from "react-i18next";
 import Particle from "../Particle";
 // import Github from "./Github";
 import Techstack from "./Techstack";
@@ -8,6 +9,7 @@ import laptopImg from "../../Assets/about.png";
 import Toolstack from "./Toolstack";
 
 function About() {
+  const { t } = useTranslation();
   return (
     <Container fluid className="about-section">
       <Particle />
@@ -21,9 +23,10 @@ function About() {
               paddingBottom: "50px",
             }}
           >
-            <h1 style={{ fontSize: "2.1em", paddingBottom: "20px" }}>
-              Know Who <strong className="purple">I'M</strong>
-            </h1>
+            <h1
+              style={{ fontSize: "2.1em", paddingBottom: "20px" }}
+              dangerouslySetInnerHTML={{ __html: t("about.know") }}
+            />
             <Aboutcard />
           </Col>
           <Col
@@ -34,15 +37,17 @@ function About() {
             <img src={laptopImg} alt="about" className="img-fluid" />
           </Col>
         </Row>
-        <h1 className="project-heading">
-          Professional <strong className="purple">Skillset </strong>
-        </h1>
+        <h1
+          className="project-heading"
+          dangerouslySetInnerHTML={{ __html: t("about.skillsetHeading") }}
+        />
 
         <Techstack />
 
-        <h1 className="project-heading">
-          <strong className="purple">Tools</strong> I use
-        </h1>
+        <h1
+          className="project-heading"
+          dangerouslySetInnerHTML={{ __html: t("about.toolsHeading") }}
+        />
         <Toolstack />
 
         {/* <Github /> */}
