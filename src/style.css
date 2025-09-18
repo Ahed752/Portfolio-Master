@@ -208,6 +208,102 @@ button:focus {
   width: 100%;
 }
 
+
+/* ---------- Playground styles (append to styles.css) ---------- */
+
+.playground-section {
+  z-index: auto !important;
+  padding-top: 6.5rem; /* keeps header overlap consistent */
+  padding-bottom: 4rem;
+  background: linear-gradient(180deg, rgba(12,8,20,0.6), rgba(8,6,14,0.9));
+  color: whitesmoke;
+}
+
+.playground-heading {
+  font-size: 2.2rem !important;
+  padding-left: 0px !important;
+  color: whitesmoke;
+  margin-bottom: 0.25rem;
+}
+
+.playground-subtitle {
+  color: #bfb1d9;
+  margin-bottom: 1.5rem;
+}
+
+.playground-card {
+  background: rgba(18,14,28,0.6);
+  border: 1px solid rgba(255,255,255,0.04);
+  padding: 1.25rem;
+  border-radius: 10px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.6);
+}
+
+.playground-label {
+  color: #dcd3ee;
+  font-weight: 600;
+}
+
+.playground-select,
+.playground-input {
+  background-color: #13101a;
+  border: 1px solid rgba(255,255,255,0.06);
+  color: whitesmoke;
+  padding: 0.55rem 0.65rem;
+  border-radius: 6px;
+}
+
+.playground-select:focus,
+.playground-input:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(205,95,248,0.12);
+  border-color: rgba(205,95,248,0.8);
+}
+
+.playground-btn {
+  background: linear-gradient(90deg,#cd5ff8,#b562d6);
+  border: none;
+  box-shadow: 0 6px 14px rgba(181,98,214,0.12);
+}
+
+.playground-output {
+  margin-top: 1rem;
+  padding: 0.85rem 1rem;
+  background: rgba(4,3,8,0.6);
+  border-radius: 8px;
+  border: 1px solid rgba(255,255,255,0.03);
+  color: #e6e0f6;
+}
+
+/* side info box */
+
+.playground-side {
+  display: flex;
+  align-items: flex-start;
+  padding-top: 0.5rem;
+}
+
+.playground-info {
+  background: transparent;
+  border-left: 1px dashed rgba(255,255,255,0.04);
+  padding-left: 1rem;
+}
+
+.playground-info-title {
+  color: #e9dff9;
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+/* responsive */
+@media (max-width: 767px) {
+  .playground-side { display: none; } /* hide side info on small screens */
+  .playground-heading { text-align: center; }
+  .playground-subtitle { text-align: center; }
+  .playground-card { padding: 1rem; }
+}
+
+
 /* --------- */
 /* Home section */
 /* --------- */
@@ -607,6 +703,13 @@ button:focus {
 .project-heading {
   color: white !important;
   font-size: 2.3em !important;
+  font-weight: 500 !important;
+  padding-top: 10px !important;
+}
+
+.project-category {
+  color: #be50f4 !important;
+  font-size: 1.4em !important;
   font-weight: 500 !important;
   padding-top: 10px !important;
 }

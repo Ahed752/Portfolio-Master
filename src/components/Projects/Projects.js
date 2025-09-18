@@ -22,6 +22,8 @@ function Projects() {
         />
         <p style={{ color: "white" }}>{t("projectsSection.intro")}</p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+          <p className="project-category">Personal Projects</p>
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={Awaazo}
@@ -78,6 +80,45 @@ function Projects() {
               }}
             />
           </Col>
+
+                  <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={SkillSwipe}
+              isBlog={false}
+              title="SkillSwipe"
+              description={
+                <ul>
+                  <li>This app is similar to LinkedIn, where users can create profiles, connect with others, post jobs, and apply for jobs.</li>
+                  <li>Implemented search algorithms to match users with job postings based on their skills and preferences using Python and Django.</li>
+                </ul>
+              }
+              ghLink="https://github.com/Marc-Eid/SkillSwipe"
+              details={{
+                techStack: ["Next.js", "TypeScript", "Chakra UI", "Custom Express API"],
+                skills: ["Authentication flow", "Notification system", "Profile page design", "Frontend-backend integration"],
+                features: ["Job matching", "User profiles", "Job posting & applications", "Notifications"],
+                projectSummary: "SkillSwipe is a career networking app designed to match users with job opportunities based on their skills and preferences. It offers both job seekers and employers a unique platform for networking and job matching.",
+                challengesSolved: [
+                  "Matching users with jobs based on skills and preferences",
+                  "Ensuring seamless integration between the frontend and backend",
+                  "Designing a responsive and user-friendly interface"
+                ],
+                scenario: `The main challenge was creating an intelligent job-matching algorithm that considered a user's skills and preferences in real-time. It needed to provide meaningful matches based on the job description and user profile.`,
+                solution: `We used a collaborative filtering algorithm to recommend jobs based on user profiles and their interactions with job listings. The algorithm was trained to match users with jobs based on their skillset, work experience, and preferences.`,
+                codeSnippet: `// Example of job matching algorithm
+            function matchJob(userSkills, jobSkills) {
+                return userSkills.filter(skill => jobSkills.includes(skill));
+            }`,
+                demoVideoUrl: "https://your-demo-video-url.com/skillswipe",
+                systemArchitecture: "SkillSwipe follows a client-server architecture where the frontend (Next.js) communicates with the backend (Express API) to process job matches, handle user data, and provide job recommendations.",
+                performanceOptimization: "We optimized the matching algorithm by caching results for frequently searched job listings and users. We also used lazy loading for job descriptions and profiles to improve initial load times."
+              }}
+            />
+
+        </Col>
+        </Row>
+
+        <p className="project-category">Academic Projects</p>
 
           <Col md={4} className="project-card">
            <ProjectCard
@@ -159,42 +200,6 @@ function Projects() {
             />
 
           </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={SkillSwipe}
-              isBlog={false}
-              title="SkillSwipe"
-              description={
-                <ul>
-                  <li>This app is similar to LinkedIn, where users can create profiles, connect with others, post jobs, and apply for jobs.</li>
-                  <li>Implemented search algorithms to match users with job postings based on their skills and preferences using Python and Django.</li>
-                </ul>
-              }
-              ghLink="https://github.com/Marc-Eid/SkillSwipe"
-              details={{
-                techStack: ["Next.js", "TypeScript", "Chakra UI", "Custom Express API"],
-                skills: ["Authentication flow", "Notification system", "Profile page design", "Frontend-backend integration"],
-                features: ["Job matching", "User profiles", "Job posting & applications", "Notifications"],
-                projectSummary: "SkillSwipe is a career networking app designed to match users with job opportunities based on their skills and preferences. It offers both job seekers and employers a unique platform for networking and job matching.",
-                challengesSolved: [
-                  "Matching users with jobs based on skills and preferences",
-                  "Ensuring seamless integration between the frontend and backend",
-                  "Designing a responsive and user-friendly interface"
-                ],
-                scenario: `The main challenge was creating an intelligent job-matching algorithm that considered a user's skills and preferences in real-time. It needed to provide meaningful matches based on the job description and user profile.`,
-                solution: `We used a collaborative filtering algorithm to recommend jobs based on user profiles and their interactions with job listings. The algorithm was trained to match users with jobs based on their skillset, work experience, and preferences.`,
-                codeSnippet: `// Example of job matching algorithm
-            function matchJob(userSkills, jobSkills) {
-                return userSkills.filter(skill => jobSkills.includes(skill));
-            }`,
-                demoVideoUrl: "https://your-demo-video-url.com/skillswipe",
-                systemArchitecture: "SkillSwipe follows a client-server architecture where the frontend (Next.js) communicates with the backend (Express API) to process job matches, handle user data, and provide job recommendations.",
-                performanceOptimization: "We optimized the matching algorithm by caching results for frequently searched job listings and users. We also used lazy loading for job descriptions and profiles to improve initial load times."
-              }}
-            />
-
-        </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
