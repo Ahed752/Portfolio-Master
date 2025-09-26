@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/Portfolio-Master/static/css/main.6808c7ab.css",
-    "main.js": "/Portfolio-Master/static/js/main.ef36e127.js",
+    "main.css": "/Portfolio-Master/static/css/main.80a19cb9.css",
+    "main.js": "/Portfolio-Master/static/js/main.f8d34f2f.js",
     "static/js/415.4d6acbeb.chunk.js": "/Portfolio-Master/static/js/415.4d6acbeb.chunk.js",
     "static/js/787.1ed0c42c.chunk.js": "/Portfolio-Master/static/js/787.1ed0c42c.chunk.js",
     "static/media/AhedAvatar.png": "/Portfolio-Master/static/media/AhedAvatar.72b2e22d369b0900105b.png",
     "static/media/NeuroNote.webp": "/Portfolio-Master/static/media/NeuroNote.d2d326a21fbbc981dbb3.webp",
     "static/media/AhedPic.png": "/Portfolio-Master/static/media/AhedPic.cb7fef33f8646900a591.png",
+    "static/media/AhedMemas.pdf": "/Portfolio-Master/static/media/AhedMemas.22d516f6cef2b84d5197.pdf",
     "static/media/about.png": "/Portfolio-Master/static/media/about.aee0f771fbfc1e7b8fa8.png",
-    "static/media/AhedMemas.pdf": "/Portfolio-Master/static/media/AhedMemas.520138b1f0f02efe5bde.pdf",
     "static/media/FaceRecognition.jpeg": "/Portfolio-Master/static/media/FaceRecognition.3ff71cdf16292c913b69.jpeg",
     "static/media/WiFi.jpeg": "/Portfolio-Master/static/media/WiFi.9a7d2e898d53521b25c7.jpeg",
     "static/media/home-bg.jpg": "/Portfolio-Master/static/media/home-bg.dc52d5d40a40b13154b0.jpg",
@@ -17,13 +17,13 @@
     "static/media/Ecommerce.jpeg": "/Portfolio-Master/static/media/Ecommerce.3604fe15eb8bf2af18a6.jpeg",
     "static/media/pre.svg": "/Portfolio-Master/static/media/pre.d4812f51c8c80976eaab.svg",
     "index.html": "/Portfolio-Master/index.html",
-    "main.6808c7ab.css.map": "/Portfolio-Master/static/css/main.6808c7ab.css.map",
-    "main.ef36e127.js.map": "/Portfolio-Master/static/js/main.ef36e127.js.map",
+    "main.80a19cb9.css.map": "/Portfolio-Master/static/css/main.80a19cb9.css.map",
+    "main.f8d34f2f.js.map": "/Portfolio-Master/static/js/main.f8d34f2f.js.map",
     "415.4d6acbeb.chunk.js.map": "/Portfolio-Master/static/js/415.4d6acbeb.chunk.js.map",
     "787.1ed0c42c.chunk.js.map": "/Portfolio-Master/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6808c7ab.css",
-    "static/js/main.ef36e127.js"
+    "static/css/main.80a19cb9.css",
+    "static/js/main.f8d34f2f.js"
   ]
 }
