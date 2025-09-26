@@ -14,9 +14,6 @@ html {
   --imp-text-color: #c770f0;
 }
 
-/* .purple {
-  color: var(--imp-text-color) !important;
-} */
 
 .purple {
   color: #34a334 !important;
@@ -208,8 +205,9 @@ button:focus {
   width: 100%;
 }
 
-
+/*------------------*/
 /* ---------- Playground styles (append to styles.css) ---------- */
+/*------------------*/
 
 .playground-section {
   z-index: auto !important;
@@ -275,7 +273,39 @@ button:focus {
   color: #e6e0f6;
 }
 
+.playground-caution {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  font-style: italic;
+  color: black;
+  background: repeating-linear-gradient(
+    -45deg,
+    yellow,
+    yellow 15px,
+    black 15px
+  );
+  border: 4px solid black;
+  border-radius: 6px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  text-transform: uppercase;
+  animation: cautionPulse 1.5s infinite;
+}
+
+@keyframes cautionPulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.7;
+  }
+}
+
+
 /* side info box */
+
+
 
 .playground-side {
   display: flex;

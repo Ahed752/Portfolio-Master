@@ -1,127 +1,114 @@
 import React, { useState } from "react";
-import { Container, Row, Col, Form, Button } from "react-bootstrap";
-import "../../../src/style.css";
-import palindrome, { description as palindromeDesc } from "../PlayGround/demos/palindrome";
-import balancedParentheses, { description as bpDesc } from "../PlayGround/demos/balancedParentheses";
-import twoSum, { description as tsDesc } from "../PlayGround/demos/twoSum";
+import DemoSelector from "./DemoSelector";
+import Particle from "../Particle";
+import DemoArea from "./DemoArea";
+import VisualizerCanvas from "./VisualizerCanvas";
+import CodePanel from "./CodePanel";
+import { linkedListDemo } from "./demos/linkedList";
+import balancedParanthesesDemo from "./demos/balancedParentheses";
+import palindromeDemo from "./demos/palindrome";
+import twoSumDemo from "./demos/twoSum";
 
-
-
-
-function Playground() {
-  const [demo, setDemo] = useState("palindrome");
-  const [input, setInput] = useState("");
-  const [output, setOutput] = useState("");
-  const demosMap = {
-  palindrome: { fn: palindrome, desc: palindromeDesc },
-  balancedParentheses: { fn: balancedParentheses, desc: bpDesc },
-  twoSum: { fn: twoSum, desc: tsDesc },
+const demos = {
+  linkedList: linkedListDemo,
+  balancedParantheses: balancedParanthesesDemo,
+  palindrome: palindromeDemo,
+  twoSum : twoSumDemo
 };
 
-function runDemo() {
-  if (demosMap[demo]) {
-    setOutput(demosMap[demo].fn(input));
-  } else {
-    setOutput("⚠️ Demo not found.");
-  }
-}
+export default function PlayGround() {
+  const [selectedDemo, setSelectedDemo] = useState("linkedList");
+  const [input, setInput] = useState("");
+  const [currentStep, setCurrentStep] = useState(0);
+  const [steps, setSteps] = useState([]);
+  const [running, setRunning] = useState(false);
 
-const currentDesc = demosMap[demo]?.desc || "No description available.";
+  const demo = demos[selectedDemo];
 
+  const handleRun = () => {
+    if (!input) return;
+    const stepArray = demo.algorithmSteps(input);
+    setSteps(stepArray);
+    setCurrentStep(0);
+    setRunning(true);
+  };
 
-
-  function resetDemo() {
+  const handleReset = () => {
     setInput("");
-    setOutput("");
-  }
+    setSteps([]);
+    setCurrentStep(0);
+    setRunning(false);
+  };
+
+  const handleNextStep = () => {
+    if (currentStep < steps.length - 1) setCurrentStep(currentStep + 1);
+    else setRunning(false);
+  };
+
+  const handlePrevStep = () => {
+    if (currentStep > 0) setCurrentStep(currentStep - 1);
+  };
 
   return (
-    <section className="home-section playground-section" aria-label="Playground">
-      <Container className="home-content">
-        <Row>
-          <Col md={8}>
-            <h1 className="heading playground-heading">Playground</h1>
-            <p className="home-about-description playground-subtitle">
-              Small, interactive demos to showcase quick algorithms and UI pieces.
-            </p>
+    <section className="resume-section">
+      <Particle />
+      <h1 className="playground-caution">
+        ⚠ Caution: Under Construction ⚠
+      </h1>
 
-            <div className="playground-card">
-              <Form
-                onSubmit={(e) => {
-                  e.preventDefault();
-                  runDemo();
-                }}
-              >
-                {/* Demo selector */}
-                <Form.Group className="mb-3" controlId="selectDemo">
-                  <Form.Label className="playground-label">Select Demo</Form.Label>
-                    <Form.Select
-                    value={demo}
-                    onChange={(e) => setDemo(e.target.value)}
-                    className="playground-select"
-                    >
-                    <option value="palindrome">Palindrome</option>
-                    <option value="balancedParentheses">Balanced Parentheses</option>
-                    <option value="twoSum">Two Sum</option>
-                    </Form.Select>
+      <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-3 gap-6">
+        {/* Left Column: Controls */}
+        <div className="lg:col-span-1 flex flex-col gap-4">
+          <h1 className="text-2xl font-bold">Playground</h1>
+          <p className="text-gray-300">{demo.description}</p>
 
-                </Form.Group>
+          <DemoSelector
+            demos={Object.keys(demos)}
+            selectedDemo={selectedDemo}
+            setSelectedDemo={setSelectedDemo}
+          />
 
-                {/* Input */}
-                <Form.Group className="mb-3" controlId="demoInput">
-                  <Form.Label className="playground-label">Input</Form.Label>
-                  <Form.Control
-                    className="playground-input"
-                    type="text"
-                    value={input}
-                    onChange={(e) => setInput(e.target.value)}
-                    placeholder="Type text here..."
-                  />
-                </Form.Group>
+          <DemoArea
+            input={input}
+            setInput={setInput}
+            handleRun={handleRun}
+            handleReset={handleReset}
+          />
 
-                {/* Buttons */}
-                <div className="d-flex gap-2">
-                  <Button
-                    type="button"
-                    onClick={runDemo}
-                    className="playground-btn"
-                  >
-                    Run
-                  </Button>
-                  <Button
-                    type="button"
-                    variant="outline-light"
-                    onClick={resetDemo}
-                  >
-                    Reset
-                  </Button>
-                </div>
-              </Form>
+          <div className="flex gap-2 mt-2">
+            <button
+              onClick={handlePrevStep}
+              className="px-4 py-2 bg-gray-700 rounded hover:bg-gray-600"
+            >
+              Prev
+            </button>
+            <button
+              onClick={handleNextStep}
+              className="px-4 py-2 bg-blue-600 rounded hover:bg-blue-500"
+            >
+              Next
+            </button>
+          </div>
+        </div>
 
-              {/* Output */}
-              {output && (
-                <div
-                  className="playground-output mt-3"
-                  role="status"
-                  aria-live="polite"
-                >
-                  {output}
-                </div>
-              )}
-            </div>
-          </Col>
+        {/* Middle Column: Canvas */}
+        <div className="lg:col-span-2 bg-gray-800 rounded p-4">
+          <VisualizerCanvas
+            steps={steps}
+            currentStep={currentStep}
+            width={800}
+            height={400}
+          />
+        </div>
 
-            <Col md={4} className="playground-side">
-            <div className="playground-info">
-                <h3 className="playground-info-title">About this Demo</h3>
-                <p className="home-about-body">{currentDesc}</p>
-            </div>
-            </Col>
-
-        </Row>
-      </Container>
+        {/* Right Column: Code Panel */}
+        <div className="lg:col-span-3 mt-4 lg:mt-0">
+          <CodePanel
+            codeLines={demo.code}
+            currentStep={steps[currentStep]?.codeLine || 0}
+          />
+        </div>
+      </div>
     </section>
   );
 }
-
-export default Playground;
